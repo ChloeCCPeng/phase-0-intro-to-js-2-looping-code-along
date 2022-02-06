@@ -1,27 +1,48 @@
-const names = ["Charlie", "Samip", "Ali"];
-const events = "birthday";
+let names = [];
+let event;
 
-function writeCards (names, events) {
+function writeCards (names, event) {
+    let message =[];
     for (let i = 0; i < names.length; i++) {
-        console.log (`Thank you, ${names[i]}, for the wonderful ${events} gift!`);
+        message.push(`Thank you, ${names[i]}, for the wonderful ${event} gift!`);
     }
-    return names;
+    return message;
 }
 
-writeCards(names, events);
-
-
-
-let countDown = 10;
-
-while (countDown >= 0){
-    console.log (countDown--);
+function countDown(){
+    let countDown = 10;
+    while (countDown >= 0) {
+  console.log(countDown--);
+}
+return countDown;
 }
 
 
-/*let countup = 0;
-while (countup < 10) {
-  console.log(countup++);
-}
 
-*/
+
+
+
+
+
+
+
+
+// const names = ["Charlie", "Samip", "Ali"];
+// const events = "birthday";
+
+// function writeCards (names, events) {
+//     for (let i = 0; i < names.length; i++) {
+//         console.log (`Thank you, ${names[i]}, for the wonderful ${events} gift!`);
+//     }
+//     return names;
+// }
+
+// writeCards(names, events);
+
+
+
+// let countDown = 10;
+
+// while (countDown >= 0){
+//     console.log (countDown--);
+// }
